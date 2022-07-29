@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="andreepratama.dev">
+	<main class="flex w-full h-screen items-center justify-center bg-zinc-50">
+		<p class="font-bold text-zinc-900 text-xl italic text-center">
+			"Siapapun kita di dunia, sambal belacan jangan lupa."
+		</p>
+	</main>
+</Layout>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+	:root {
+		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+
+	html,
+	body {
+		padding: 0 !important;
+		margin: 0 !important;
+		font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	p {
+		padding: 0;
+		margin: 0;
+	}
+</style>
