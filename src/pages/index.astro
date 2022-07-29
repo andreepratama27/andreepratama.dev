@@ -4,11 +4,18 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout title="andreepratama.dev">
-	<main class="flex w-full h-screen items-center justify-center bg-zinc-50">
+	<main class="flex flex-col w-full h-screen items-center justify-center bg-zinc-50">
 		<p class="font-bold text-zinc-900 text-xl italic text-center">
 			"Siapapun kita di dunia, sambal belacan jangan lupa."
 		</p>
+
+		<footer class="absolute bottom-4">
+			<p class="text-md font-serif">
+				Copyright&copy; 2022 by <strong>@andreepratama27</strong>
+			</p>
+		</footer>
 	</main>
+
 </Layout>
 
 <style>
@@ -20,6 +27,7 @@ import Card from "../components/Card.astro";
 
 	html,
 	body {
+		font-size: 14px;
 		padding: 0 !important;
 		margin: 0 !important;
 		font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
