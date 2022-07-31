@@ -1,11 +1,12 @@
+import "../../styles/main.css";
+
 const Navbar = () => {
   return (
-    <nav class="w-full py-4 px-10 bg-zinc-50">
-      <div class="nav-wrapper flex items-center justify-between">
+    <nav class="w-full bg-zinc-50 py-4 px-2">
+      <div class="layout nav-wrapper flex flex-wrap justify-between items-center mx-auto">
         <div class="brand font-semi">
           <a href="/">andreepratama.dev</a>
         </div>
-
         <div class="menu">
           <ul class="flex gap-6">
             <li>
