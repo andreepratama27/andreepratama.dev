@@ -1,19 +1,27 @@
 import "../../styles/main.css";
 
+const Logo = () => {
+  return (
+    <div className="logo bg-red-50">
+      <a href="/">andreepratama.dev</a>
+    </div>
+  )
+}
+
 const Navbar = () => {
   return (
-    <nav class="w-full bg-zinc-50 py-4 px-2">
-      <div class="layout nav-wrapper flex flex-wrap justify-between items-center mx-auto">
-        <div class="brand font-semi">
-          <a href="/">andreepratama.dev</a>
+    <nav className="w-full px-2 py-4 bg-zinc-50">
+      <div className="flex flex-wrap items-center justify-between max-w-2xl mx-auto layout nav-wrapper">
+        <div className="brand font-semi">
+          <Logo />
         </div>
-        <div class="menu">
-          <ul class="flex gap-6">
+        <div className="menu">
+          <ul className="flex gap-6">
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/blog" className="px-8 py-2 border border-b-4 border-black">Blog</a>
             </li>
             <li>
-              <a href="#">Tentang Saya</a>
+              <a href="/about" className="px-8 py-2 border border-b-4 border-black">Tentang Saya</a>
             </li>
           </ul>
         </div>

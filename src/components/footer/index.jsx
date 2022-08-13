@@ -1,9 +1,11 @@
 const Footer = () => {
     return (
-      <footer class="w-full text-center absolute bottom-4">
-        <p class="text-md">
-          di otak-atik oleh <strong>@andreepratama27</strong>
-        </p>
+      <footer className="absolute w-full text-center bottom-4">
+        <div>
+          <p className="text-md">
+            di otak-atik oleh <strong>@andreepratama27</strong>
+          </p>
+        </div>
       </footer>
     );
 }
