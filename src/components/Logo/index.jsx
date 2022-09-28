@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
-    <div className="logo bg-zinc-50">
-      <a href="/">andreepratama.dev</a>
+    <div className="logo logo-underline">
+      <a href="/">.AndrePratama</a>
     </div>
   )
 }
