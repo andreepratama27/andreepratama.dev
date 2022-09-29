@@ -1,20 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import BlogList from '../components/BlogList'
+import Layout from "../layouts/Layout.astro";
+import BlogList from "../components/BlogList";
 ---
 
 <Layout title="Blog | andreepratama.dev">
-	<main class="flex flex-col items-center w-full bg-zinc-50 pt-10 h-screen">
-		<div class="max-w-2xl py-14 blog-container">
-			<BlogList />
-		</div>
-	</main>
+  <main class="flex flex-col items-center w-full pt-10 h-screen">
+    <div class="max-w-2xl py-14 blog-container">
+      <BlogList />
+    </div>
+  </main>
 </Layout>
 
 <style>
-	@media(max-width: 600px) {
-		.blog-container {
-			padding: 0 16px;
-		}
-	}
+  @media (max-width: 600px) {
+    .blog-container {
+      padding: 0 16px;
+    }
+  }
 </style>
