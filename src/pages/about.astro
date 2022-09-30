@@ -1,43 +1,43 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Motto from "../pages/Motto.astro";
 ---
 
 <Layout title="About | andreepratama.dev">
-  <div class="flex flex-col items-center justify-center w-full h-72 pt-14">
-    <div
-      class="max-w-2xl w-full border border-black h-full flex items-center justify-center my-10 border-b-4"
-    >
-      <p
-        class="text-xl italic font-bold text-center text-zinc-900 custom-font leading-loose"
-      >
-        "Siapapun kita di dunia, sambal belacan jangan lupa."
-      </p>
-    </div>
-  </div>
-  <div class="flex flex-col h-screen">
+  <Motto />
+  <div class="flex flex-col h-screen" id="container">
     <div class="max-w-2xl pt-4 mx-auto">
       <div class="mb-10 link">
         <div class="pb-4 text-left link-title">
           <div class="w-20 pb-2 text-2xl bold-underline border-b-4">.Link</div>
         </div>
 
-        <div class="pl-4 link-content">
-          <ul class="list-disc list-item">
-            <li class="pb-2">
+        <div class="link-content">
+          <ul class="list-none list-item">
+            <li class="pb-2 flex items-center mb-2">
+              <div class="icon mr-2">
+                <img src="/twitter.png" class="w-5 h-5" alt="" />
+              </div>
               Twitter: <a
                 class="text-blue-400"
                 href="https://twitter.com/andreepratamaa"
                 >@andreepratamaa
               </a>
             </li>
-            <li class="pb-2">
+            <li class="pb-2 flex items-center mb-2">
+              <div class="icon mr-2">
+                <img src="/instagram.png" class="w-5 h-5" alt="" />
+              </div>
               Instagram: <a
                 href="https://instagram.com/andreepratamaa_"
                 class="text-blue-400"
                 >andreepratama_
               </a>
             </li>
-            <li class="pb-2">
+            <li class="pb-2 flex items-center">
+              <div class="icon mr-2">
+                <img src="/github.png" class="w-5 h-5" alt="" />
+              </div>
               Github: <a
                 href="https://github.com/andreepratama27"
                 class="text-blue-400"
@@ -57,8 +57,8 @@ import Layout from "../layouts/Layout.astro";
 
         <div class="about-content">
           <p class="leading-7 mb-4">
-            Hi, I'm Andre. Currently I working with my team to build stock
-            stream app for Malaysia in <strong>Stockbit</strong>.
+            Hi, I'm Andre. Currently working at <strong>Stockbit</strong> to build
+            web based Stocks App for Malaysia users.
           </p>
         </div>
       </div>
