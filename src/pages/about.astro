@@ -1,15 +1,30 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Motto from "../pages/Motto.astro";
+import Motto from "../components/Motto/Motto.astro";
 ---
 
 <Layout title="About | andreepratama.dev">
   <Motto />
   <div class="flex flex-col h-screen" id="container">
     <div class="max-w-2xl pt-4 mx-auto">
+      <div class="about mb-10">
+        <div class="pb-4 text-left about-title">
+          <div class="w-40 pb-2 text-2xl border-b-4 bold-underline">
+            .CurrentState
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="leading-7 mb-4">
+            Hi, I'm Andre. Currently working at <strong>Stockbit</strong> to build
+            web based Stocks App for Malaysia users.
+          </p>
+        </div>
+      </div>
+
       <div class="mb-10 link">
         <div class="pb-4 text-left link-title">
-          <div class="w-20 pb-2 text-2xl bold-underline border-b-4">.Link</div>
+          <div class="w-20 pb-2 text-2xl bold-underline border-b-4">.SocialMedia</div>
         </div>
 
         <div class="link-content">
@@ -48,20 +63,27 @@ import Motto from "../pages/Motto.astro";
         </div>
       </div>
 
-      <div class="about">
-        <div class="pb-4 text-left about-title">
-          <div class="w-40 pb-2 text-2xl border-b-4 bold-underline">
-            .CurrentState
-          </div>
+      <div class="mb-10 link">
+        <div class="pb-4 text-left link-title">
+          <div class="w-20 pb-2 text-2xl bold-underline border-b-4">.GadgetList</div>
         </div>
 
-        <div class="about-content">
-          <p class="leading-7 mb-4">
-            Hi, I'm Andre. Currently working at <strong>Stockbit</strong> to build
-            web based Stocks App for Malaysia users.
-          </p>
+        <div class="link-content">
+          <ul class="list-none list-item">
+            <li class="pb-2 flex items-center mb-2">
+              Laptop: Macbook Air M1
+            </li>
+            <li class="pb-2 flex items-center mb-2">
+              Monitor: Xiaomi Mi Curved 34 Inch
+            </li>
+            <li class="pb-2 flex items-center mb-2">
+              Phone: IPhone XR
+            </li>
+          </ul>
         </div>
       </div>
+
+      
     </div>
   </div>
 </Layout>

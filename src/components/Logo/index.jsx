@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
     <div className="logo logo-underline">
-      <a href="/">.AndrePratama</a>
+      <a href="/" className="text-md">.AndrePratama</a>
     </div>
   )
 }
