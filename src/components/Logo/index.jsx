@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="logo logo-underline">
+    <div className="logo logo-underline hover:shadow-skew transition ease-in-out">
       <a href="/" className="text-md">.AndrePratama</a>
     </div>
   )

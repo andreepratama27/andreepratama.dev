@@ -1,6 +1,6 @@
 const BlogList = () => {
 	return (
-    <div className="w-full px-8 py-2 mb-8 border border-b-4 border-black">
+    <div className="w-full px-8 py-2 mb-8 border-black">
       <div className="pt-4 blog-title">
 				<p className="text-xl font-bold">
 					Blog Title

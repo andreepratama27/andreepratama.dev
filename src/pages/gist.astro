@@ -1,17 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import BlogList from "../components/BlogList/BlogList.astro";
-const posts = await Astro.glob("./blog/*.md")
+const posts = await Astro.glob("./contekan/*.mdx")
 ---
 
 <Layout title="Blog | andreepratama.dev">
   <main class="flex flex-col items-center w-full pt-10 h-screen">
     <div class="max-w-2xl w-full py-14 blog-container">
-      {
-        posts.map(post => (
-          <BlogList {...post} />
-        ))
-      }
+      {posts.length}
     </div>
   </main>
 </Layout>

@@ -1,16 +1,26 @@
-<div class="w-full px-8 py-2 mb-8 border border-b-4 border-black">
-    <div class="pt-4 blog-title">
-        <p class="text-xl font-bold">
-            Blog Title
-        </p>
+---
+const {
+  url,
+  frontmatter: {
+    title,
+    description,
+    author,
+  }
+} = Astro.props
+---
+
+<div class="w-full px-8 py-2 mb-8 border border-black hover:shadow-skew transition ease-in-out">
+    <div class="blog-title pt-4">
+      <a href={url}>
+         {title}
+      </a>
     </div>
 
     <div class="blog-content">
-        <p class="py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            voluptatem aut quae officiis earum sit provident, praesentium sequi
-            aspernatur, ipsa laborum tempora a cumque, doloremque ad amet sed minus
-            quidem!
+        <p class="pt-2 pb-4 text-md">
+          {description}
         </p>
     </div>
+
+    <p class="text-sm text-yellow-600">Oleh: {author}</p>
 </div>
