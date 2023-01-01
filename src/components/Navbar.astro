@@ -2,7 +2,9 @@
 import Logo from "./Logo";
 ---
 
-<nav class="w-full px-3 py-6 fixed navbar-fixed bg-white border-b border-black">
+<nav
+  class="w-full px-3 py-6 fixed navbar-fixed bg-white border-b-2 border-black"
+>
   <div
     class="flex flex-wrap items-center justify-between max-w-2xl mx-auto layout nav-wrapper"
   >
@@ -11,20 +13,20 @@ import Logo from "./Logo";
     </div>
     <div class="menu">
       <ul class="flex gap-2">
-        <li class="px-4 py border hover:shadow-skew rounded-full border-black transition ease-in-out">
-          <a href="/blog" class="text-sm p-0"
-            >.Blog
-          </a>
+        <li
+          class="px-4 py-1 border shadow-skew border-black transition ease-in-out"
+        >
+          <a href="/blog" class="text-sm p-0">.Blog</a>
         </li>
-        <li class="px-4 py border border-black hover:shadow-skew rounded-full transition ease-in-out">
-          <a href="/contekan" class="text-sm"
-            >.Gist
-          </a>
+        <li
+          class="px-4 py-1 border shadow-skew border-black transition ease-in-out"
+        >
+          <a href="/contekan" class="text-sm">.Gist</a>
         </li>
-        <li class="px-4 py border border-black hover:shadow-skew rounded-full transition ease-in-out">
-          <a href="/about" class="text-sm"
-           >.AboutMe
-          </a>
+        <li
+          class="px-4 py-1 shadow-skew border border-black transition ease-in-out"
+        >
+          <a href="/about" class="text-sm">.AboutMe</a>
         </li>
       </ul>
     </div>
