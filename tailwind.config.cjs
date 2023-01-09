@@ -7,7 +7,7 @@ module.exports = {
         'skew': '3px 3px rgba(0,0,0,1)'
       },
       colors: {
-        'brutalism': '#F8F4EA'
+        'brutalism': '#F4F4F0'
       }
     },
 	},
