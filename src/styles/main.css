@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'Virgil';
+    src: url('../../public//Virgil.woff2') format('woff2');
+}
+
 .layout {
     margin: 0 auto;
 }
 
 .custom-font {
     font-family: 'Press Start 2P';
+}
+
+.handwrite-font {
+    font-family: 'Virgil';
 }
 
 :root {

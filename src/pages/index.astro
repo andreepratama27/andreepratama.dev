@@ -8,10 +8,12 @@ import Layout from "../layouts/Layout.astro";
       class="blog-content w-full max-w-2xl flex flex-col-reverse items-center justify-between"
     >
       <div class="blog-content__left p-4 md:px-0 text-center">
-        <p class="text-2xl pb-4">
-          Hi, <strong class="bold-underline">I'm Andre Pratama.</strong>
+        <p class="text-3xl pb-4 handwrite-font">
+          Hi, <strong class="bold-underline handwrite-font"
+            >I'm Andre Pratama.
+          </strong>
         </p>
-        <p class="leading-7">
+        <p class="leading-8 handwrite-font text-lg">
           I am a Software Engineer focusing on building website using Javascript
           <br /><i>(I use React quite often to build Web App)</i>. Currently,
           falling in 💖 with <strong>Svelte</strong> & <strong
@@ -28,7 +30,11 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <footer class="p-4 text-center bg-gray-900 fixed bottom-0 w-full">
-  <p class="text-white">
-    This website is build while I eating 🍉 using <strong>Astro</strong>
+  <p class="text-white handwrite-font">
+    This website is build while I eating 🍉 using <a
+      class="border-dashed border-b-2"
+      href="https://astro.build"
+      ><strong>Astro</strong>
+    </a>
   </p>
 </footer>
