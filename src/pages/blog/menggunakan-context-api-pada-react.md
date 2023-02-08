@@ -2,6 +2,7 @@
 title: Menggunakan Context API pada React
 description: ---.
 author: Andre Pratama
+layout: ../../layouts/BlogPostLayout.astro
 ---
 
 Pada tulisan kali ini, saya akan coba menjelaskan ‘to-the-point’ bagaimana cara menggunakan Context API pada React 16.
