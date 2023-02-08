@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 
 const portfolios = [
+  { title: "Buka Whatsapp", link: "https://bukawhats.app" },
   { title: "Quran Indo", link: "https://quran-indo.andreepratama.dev" },
   { title: "Doa Harian", link: "https://doa-harian.andreepratama.dev" },
   { title: "Personal Website", link: "/" },
@@ -14,7 +15,7 @@ const portfolios = [
     <div class="divider w-20 h-1 bg-black mt-2"></div>
 
     <section
-      class="showcase-grid mt-8 grid md:grid-cols-2 sm:grid-cols-1 gap-10"
+      class="showcase-grid mt-8 grid md:grid-cols-2 sm:grid-cols-1 gap-6"
     >
       {
         portfolios.map((item) => (
