@@ -2,40 +2,107 @@
 import Layout from "../layouts/Layout.astro";
 
 const portfolios = [
-  { title: "Buka Whatsapp", link: "https://bukawhats.app" },
-  { title: "Quran Indo", link: "https://quran-indo.andreepratama.dev" },
-  { title: "Doa Harian", link: "https://doa-harian.andreepratama.dev" },
-  { title: "Personal Website", link: "/" },
+	{
+		title: "Primaku Website",
+		link: "https://primaku.com",
+		stack: ["Next JS", "Typescript", "Redux Toolkit", "Tailwind CSS", "SCSS"],
+	},
+	{
+		title: "Primaku Parenthood Institue",
+		link: "https://app-parenthood.primaku.com",
+		stack: ["Next JS", "Typescript", "Zustand", "Tailwind CSS", "SCSS"],
+	},
+	{
+		title: "The Palace Jeweler Website",
+		link: "https://thepalacejeweler.com",
+		stack: ["Next JS", "Typescript", "Zustand", "React Query", "shadcn/ui"],
+	},
+	{
+		title: "Anime Directory",
+		link: "https://anime-dashboard-three.vercel.app",
+		stack: ["React", "Typescript", "Tailwind CSS", "SASS"],
+	},
+	{
+		title: "Culinary Directory",
+		link: "https://masak-sih.andreepratama.dev",
+		stack: ["Remix", "Typescript", "Tailwind CSS", "React Query"],
+	},
+	{
+		title: "Buka Whatsapp",
+		link: "https://bukawhatsapp.andreepratama.dev/",
+		stack: ["SvelteKit", "Tailwind CSS", "SASS"],
+	},
+	{
+		title: "Quran Indo",
+		link: "https://quran-indo.andreepratama.dev",
+		stack: ["SvelteKit", "Tailwind CSS", "SASS"],
+	},
+	{
+		title: "Doa Harian",
+		link: "https://doa-harian.andreepratama.dev",
+		stack: ["SvelteKit", "Tailwind CSS", "SASS"],
+	},
 ];
 ---
 
 <Layout title="Showcase | andreepratama.dev">
-  <main class="flex flex-col w-full mt-24 max-w-2xl mx-auto md:px-0 px-4">
+  <main class="flex flex-col h-full w-full mt-24 max-w-2xl mx-auto md:px-0 px-4">
     <p class="title text-xl">Current Showcase</p>
     <div class="divider w-20 h-1 bg-black mt-2"></div>
 
-    <section
-      class="showcase-grid mt-8 grid md:grid-cols-2 sm:grid-cols-1 gap-6"
-    >
+    <div class="grid grid-cols-2 gap-4 mt-8">
       {
         portfolios.map((item) => (
-          <div class="w-full h-48 border border-black shadow-skew relative bg-red-100 flex items-center justify-center">
-            <div class="content-center relative bottom-4 bg-violet-700 shadow-skew p-2 px-4">
+          <div class="w-full border border-black shadow-skew relative flex flex-col items-center justify-center">
+            <div class="box h-14 bg-white w-full flex items-center px-4">
               <a
                 href={item.link}
-                class="text-white text-sm hover:border-dashed hover:border-b-2"
+                class="text-sm hover:border-dashed hover:border-b-2"
                 target="_blank"
               >
-                Visit Link
+                {item.title}
               </a>
             </div>
-
-            <div class="grid-title absolute bottom-0 w-full bg-gray-900 p-2 opacity-90">
-              <p class="text-white">{item.title}</p>
+            <div class="grid-title h-28 overflow-y-scroll [&::-webkit-scrollbar]:hidden bottom-0 w-full bg-gray-900 p-2 opacity-90">
+              <p class="text-white text-sm">Tech Stack:</p>
+              <div class="flex flex-wrap mt-2">
+                {
+                  item.stack.map(itemStack => (
+                    <div class="px-2 bg-white py-1 rounded-full border text-xs mb-2 mx-2">
+                      {itemStack}
+                    </div>
+                  ))
+                }
+              </div>
             </div>
           </div>
         ))
       }
-    </section>
+      
+
+    </div>
+
+    <!-- <section
+      class="showcase-grid mt-8 grid md:grid-cols-2 sm:grid-cols-1 gap-6"
+    >
+      {
+        portfolios.map((item) => (
+          <div class="w-full border border-black shadow-skew relative flex items-center justify-center">
+            <div class="h-14 w-full bg-white flex justify-center items-center">
+              <a
+                href={item.link}
+                class="text-sm hover:border-dashed hover:border-b-2"
+                target="_blank"
+              >
+              {item.title}
+              </a>
+            </div>
+            <div class="grid-title h-40 absolute bottom-0 w-full bg-gray-900 p-2 opacity-90">
+              <p class="text-white text-sm">Tech Stack:</p>
+            </div>
+          </div>
+        ))
+      }
+    </section> -->
   </main>
 </Layout>
